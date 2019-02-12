@@ -33,6 +33,20 @@ module.exports = {
         // Add any options here
       },
     },
+    {
+      resolve: `gatsby-plugin-polished`
+    },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`300`, `300i`, `600`, `700`]
+          },
+        ],
+      },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
