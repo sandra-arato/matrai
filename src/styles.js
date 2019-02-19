@@ -199,4 +199,4 @@ const globalCSS = `
     }
   }
 `;
-export default createGlobalStyle`${globalCSS}`;
+export const GlobalStyles = createGlobalStyle`${globalCSS}`;
