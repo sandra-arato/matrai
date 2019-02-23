@@ -186,17 +186,11 @@ const globalCSS = `
   /* Media queries */
 
   html {
-    font-size: 12px;
+    font-size: 10px;
+  }
 
-    // more than 1280 (standard 13')
-    @media screen and (min-width:81em) {
-      font-size: 14px;
-    }
-
-    // more than 1440 (standard 15')
-    @media screen and (min-width:91em) {
-      font-size: 16px
-    }
+  body {
+    font-size: 1rem;
   }
 `;
 export const GlobalStyles = createGlobalStyle`${globalCSS}`;
