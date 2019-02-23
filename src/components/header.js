@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 
-import { colors, globalStyles } from '../styles'
+import { colors } from '../styles'
 import LogoImage from '../images/logo.png'
 
 const HeaderLogo = styled.img.attrs({
@@ -26,7 +26,7 @@ const MenuItem = styled.li`
   display: inline-block;
   margin: 0 1rem;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 
   &:last-child {
     margin-right: 0;

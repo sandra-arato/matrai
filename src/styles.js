@@ -6,7 +6,8 @@ export const colors = {
   secondary: `#171717`,
   text: `#171717`,
   bgLight: `#fff`,
-  bgDark: `#ededed`
+  bgDark: `#ededed`,
+  bgGrey: `#f8f8f8`,
 }
 
 const globalCSS = `
@@ -46,6 +47,7 @@ const globalCSS = `
   body {
     line-height: 1;
     color: ${colors.text};
+    font-family: Montserrat, sans-serif;
   }
 
   ol, ul {

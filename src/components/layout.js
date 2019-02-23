@@ -20,6 +20,7 @@ const Layout = ({ children }) => (
       <>
         <GlobalStyles />
         <Header title={data.site.siteMetadata.title} />
+        {children}
       </>
     )}
   />
