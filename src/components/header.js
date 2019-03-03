@@ -3,14 +3,20 @@ import React from 'react'
 import styled from 'styled-components'
 
 import { colors } from '../styles'
-import LogoImage from '../images/logo.png'
+import LogoImage from '../images/matrai-exquisite.png'
 
 const HeaderLogo = styled.img.attrs({
   src: LogoImage
 })`
+  display: flex;
+  align-self: center;
+  height: 3.5rem;
+  width: auto;
 `
 
 const HeaderLogoLink = styled(Link)`
+  display: inline-flex;
+  flex: column;
   color: ${colors.text};
   font-size: 1.5rem;
   text-decoration: none;
@@ -26,7 +32,7 @@ const MenuItem = styled.li`
   display: inline-block;
   margin: 0 1rem;
   text-transform: uppercase;
-  font-size: 1.25rem;
+  font-size: 0.75rem;
 
   &:last-child {
     margin-right: 0;
@@ -35,16 +41,39 @@ const MenuItem = styled.li`
 
 const MenuItemLink = styled(Link)`
   color: ${colors.text};
+
+  &::before,
+  &::after {
+    display: inline-block;
+    content: '_';
+    padding: 0 0.125rem;
+    visibility: hidden;
+    font-weight: 800;
+    color: ${colors.accentRust};
+  }
+
+  &:hover,
+  &:focus {
+    color: ${colors.accentRust};
+    outline: none;
+    
+    ::before,
+    ::after {
+      visibility: initial;
+    }
+
+  }
 `
 
-const Wrapper = styled.div`
+const Wrapper = styled.header`
   display: flex;
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 2.4rem 5rem 2.4rem 6.4rem;
-  background: ${colors.bgLight};
   box-sizing: border-box;
-  font-size: 1.2rem;
+  max-width: 120rem;
+  height: 6.25rem;
+  line-height: 6.25rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+  background: ${colors.bgLight};
 `
 
 const Header = ({ title }) => (
