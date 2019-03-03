@@ -1,11 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
-import { Footer, VideoContent } from '../components/index'
+import { Intro, Footer, FeaturedDress, VideoContent } from '../components/index'
 
 const IndexPage = ({ data }) => (
   <Layout>
-    
+    <Intro />
+    <FeaturedDress />
     <VideoContent />
     <Footer posts={data.allInstaNode}/>
   </Layout>

@@ -45,10 +45,9 @@ const MenuItemLink = styled(Link)`
   &::before,
   &::after {
     display: inline-block;
-    content: '_';
+    content: ' / ';
     padding: 0 0.125rem;
     visibility: hidden;
-    font-weight: 800;
     color: ${colors.accentRust};
   }
 
@@ -56,7 +55,7 @@ const MenuItemLink = styled(Link)`
   &:focus {
     color: ${colors.accentRust};
     outline: none;
-    
+
     ::before,
     ::after {
       visibility: initial;
