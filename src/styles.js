@@ -4,6 +4,7 @@ import { lighten } from 'polished'
 export const colors = {
   primary: `#fff`,
   secondary: `#171717`,
+  accentRust: `#c85011`,
   text: `#171717`,
   bgLight: `#fff`,
   bgDark: `#ededed`,
@@ -186,13 +187,16 @@ const globalCSS = `
   }
 
   /* Media queries */
-
-  html {
-    font-size: 10px;
+  @media (max-width:620px)  {
+    /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    html {
+      font-size: 12px;
+    }
+  
+    body {
+      font-size: 1rem;
+    }
   }
-
-  body {
-    font-size: 1rem;
-  }
+  
 `;
 export const GlobalStyles = createGlobalStyle`${globalCSS}`;

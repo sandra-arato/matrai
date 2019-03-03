@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `MATRAI - The exquisite bride`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Bridal gowns from Australian designer Sophia Matrai`,
     author: `Sophia Matrai`,
   },
   plugins: [
@@ -28,7 +28,7 @@ module.exports = {
         short_name: `starter`,
         start_url: `/`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/matrai-icon.png`, // This path is relative to the root of the site.
       },
     },
     {
