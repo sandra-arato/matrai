@@ -1,6 +1,7 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
+import Image from 'gatsby-image';
 
 import { colors } from '../../styles'
 
@@ -32,7 +33,8 @@ const MenuItemLink = styled(Link)`
 `
 
 const Wrapper = styled.footer`
-  display: flex;
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
   width: 100%;
   padding: 2.4rem 5rem 2.4rem 6.4rem;
   background: ${colors.bgGrey};
@@ -40,9 +42,13 @@ const Wrapper = styled.footer`
   font-size: 1.2rem;
 `
 
-export const Footer = () => (
+export const Footer = ({ posts }) => (
   <Wrapper>
-      hello
+    {
+      posts.edges.map((item, i) => {
+        return item.node.localFile ? <Image fluid={item.node.localFile.childImageSharp.fluid} key={i} caption={item.node.caption}/> : <div></div>;
+      })
+    }
   </Wrapper>
 )
 
