@@ -42,7 +42,7 @@ export const FeaturedDress = () => (
       <DressImg src={Dress} />
       <Title>
         Cassie Gown
-        <ShopLink to="/">Shop now</ShopLink>
+        <ShopLink to="/shop">Shop now</ShopLink>
       </Title>
   </Wrapper>
 )

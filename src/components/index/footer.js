@@ -31,7 +31,7 @@ const Wrapper = styled.footer`
 
   const Bg = styled.div`
     position: relative;
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
     background: ${colors.bgGrey};
 
     &::before {
@@ -39,7 +39,7 @@ const Wrapper = styled.footer`
       display: block;
       position: absolute;
       width: 100%;
-      height: calc((100vw - 4rem)/10 + 2rem);
+      height: calc((100vw - 4rem)/10);
       background: ${colors.primary};
       margin-top: 4rem;
     }
