@@ -11,6 +11,33 @@ export const colors = {
   bgGrey: `#f8f8f8`,
 }
 
+export const headerHeight = `6.25rem`;
+
+export const arrows = dir => (`
+  width: 0;
+  height: 0;
+  border-width: 2px;
+  border-style: solid;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform:
+    rotate(${ dir === 'right' ? '45deg' : '-135deg'})
+    translateX(${ dir === 'right' ? '24px' : '-4px'})
+    translateY(${ dir === 'right' ? '-19px' : '-1px'});
+  &:before{
+    right: 0;
+    top: -1px;
+    position: absolute;
+    height: 1px;
+    box-shadow: inset 0 0 0 2px;
+    transform: rotate(-45deg);
+    width: 32px;
+    transform-origin: right top;
+  }
+`);
+
+
+
 const globalCSS = `
   /* Fonts */
   @font-face {

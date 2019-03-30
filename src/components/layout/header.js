@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 
-import { colors } from '../../styles'
+import { colors, headerHeight } from '../../styles'
 import LogoImage from '../../images/matrai-exquisite.png'
 
 const HeaderLogo = styled.img.attrs({
@@ -72,8 +72,8 @@ const Wrapper = styled.header`
   z-index: 1000;
   box-sizing: border-box;
   width: 100%;
-  height: 6.25rem;
-  line-height: 6.25rem;
+  height: ${headerHeight};
+  line-height: ${headerHeight};
   margin: 0 auto;
   padding: 0 4rem;
   background: ${colors.bgLight};

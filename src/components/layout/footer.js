@@ -48,13 +48,14 @@ const Wrapper = styled.footer`
 const Heading = styled.h2`
   width: 100%;
   font-weight: 600;
-  font-size: 1.625rem;
+  font-size: 1.375rem;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.125rem;
   line-height: 2rem;
   padding: 1.5rem 0 2rem 0;
   background: ${colors.primary};
+  margin-top: 5rem;
 `;
 
 export const Footer = ({ posts }) => (

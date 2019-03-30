@@ -7,6 +7,7 @@ const Wrapper = styled.section`
   width: 100%;
   padding: 4.5 2rem;
   font-family: Doulos, serif;
+  margin-top: 5rem;
 
   &::before {
     content: '';
@@ -38,7 +39,7 @@ const P = styled.p`
 `
 
 const Bold = styled.p`
-    font-size: 1.625rem;
+    font-size: 1.375rem;
     font-weight: 500;
     font-family: Montserrat, sans-serif;
     letter-spacing: 0.025em;

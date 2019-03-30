@@ -2,17 +2,17 @@ import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 
-import { colors } from '../../styles'
+import { colors, headerHeight } from '../../styles'
 
 const Wrapper = styled.aside`
   display: inline-block;
   position: sticky;
   z-index: 500;
-  top: 6.25rem;
+  top: ${headerHeight};
   left: 0;
   box-sizing: border-box;
   width: 2rem;
-  height: calc(100vh - 6.25rem);
+  height: calc(100vh - ${headerHeight});
   background: ${colors.bgDark};
   vertical-align: top;
 `

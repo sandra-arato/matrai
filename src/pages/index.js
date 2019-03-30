@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import { Layout } from '../components/layout'
-import { Intro, FeaturedDress, VideoContent, TopCarousel } from '../components/index'
+import { Intro, FeaturedDress, VideoContent, TopCarousel, Dresses, Brides } from '../components/index'
 
 const IndexPage = ({ data }) => (
   <Layout insta={data.allInstaNode}>
@@ -9,6 +9,8 @@ const IndexPage = ({ data }) => (
     <Intro />
     <FeaturedDress />
     <VideoContent />
+    <Dresses />
+    <Brides />
   </Layout>
 )
 
