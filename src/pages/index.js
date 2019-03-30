@@ -1,14 +1,14 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
-import { Intro, Footer, FeaturedDress, VideoContent } from '../components/index'
+import { Layout } from '../components/layout'
+import { Intro, FeaturedDress, VideoContent, TopCarousel } from '../components/index'
 
 const IndexPage = ({ data }) => (
-  <Layout>
+  <Layout insta={data.allInstaNode}>
+    <TopCarousel />
     <Intro />
     <FeaturedDress />
     <VideoContent />
-    <Footer posts={data.allInstaNode}/>
   </Layout>
 )
 

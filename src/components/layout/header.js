@@ -2,8 +2,8 @@ import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 
-import { colors } from '../styles'
-import LogoImage from '../images/matrai-exquisite.png'
+import { colors } from '../../styles'
+import LogoImage from '../../images/matrai-exquisite.png'
 
 const HeaderLogo = styled.img.attrs({
   src: LogoImage
@@ -66,8 +66,12 @@ const MenuItemLink = styled(Link)`
 
 const Wrapper = styled.header`
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   box-sizing: border-box;
-  max-width: 120rem;
+  width: 100%;
   height: 6.25rem;
   line-height: 6.25rem;
   margin: 0 auto;
