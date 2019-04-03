@@ -9,6 +9,7 @@ export const colors = {
   bgLight: `#fff`,
   bgDark: `#ededed`,
   bgGrey: `#f8f8f8`,
+  dateColor: `#7d7d7d`,
 }
 
 export const headerHeight = `6.25rem`;

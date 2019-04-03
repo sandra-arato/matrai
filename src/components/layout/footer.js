@@ -62,7 +62,7 @@ export const Footer = ({ posts }) => (
   <Bg>
     <Heading>Follow our daily inspirations @matrai_label</Heading>
     <Wrapper>
-      {
+      { posts && posts.edges &&
         posts.edges.map((item, i) => {
           return item.node.localFile ? <Post fluid={item.node.localFile.childImageSharp.fluid} key={i} caption={item.node.caption}/> : <div></div>;
         })
