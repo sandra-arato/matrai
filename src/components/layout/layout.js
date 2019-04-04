@@ -8,10 +8,6 @@ import BookAside from './bookAside'
 import Footer from './footer'
 import { GlobalStyles } from '../../styles'
 
-const Wrapper = styled.div`
-  vertical-align: top;
-`
-
 const Main = styled.main`
   display: inline-block;
   box-sizing: border-box;

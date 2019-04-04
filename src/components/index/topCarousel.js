@@ -9,6 +9,7 @@ import { headerHeight, colors, arrows } from '../../styles'
 import Dress from '../../images/cassie_by_Matrai.jpg'
 import Dress2 from '../../images/Matrai_dress_front.jpg'
 import Dress3 from '../../images/Matrai_dress_back.jpg'
+import HeroSlide from './heroSlide';
 
 const DressImg = styled.img`
   width: 100%;
@@ -80,13 +81,14 @@ export const TopCarousel = () => (
   <Wrapper>
     <Slider {...settings}>
       <Slide>
-        <DressImg src={Dress2} />
+        <HeroSlide primary={Dress2} secondary={Dress3} title="Perfect Romance" description="Designed for the wild & romantic, Milla reflects the soft elegance with effortless and captivating features on the bespoke handmade dress." />
       </Slide>
       <Slide>
-        <DressImg src={Dress3} />
+        <HeroSlide primary={Dress2} secondary={Dress3} title="Perfect Romance" description="Designed for the wild & romantic, Milla reflects the soft elegance with effortless and captivating features on the bespoke handmade dress." />        <DressImg src={Dress3} />
       </Slide>
       <Slide>
-      <DressImg src={Dress} />
+        <HeroSlide primary={Dress2} secondary={Dress3} title="Perfect Romance" description="Designed for the wild & romantic, Milla reflects the soft elegance with effortless and captivating features on the bespoke handmade dress." />
+
       </Slide>
     </Slider>
 
